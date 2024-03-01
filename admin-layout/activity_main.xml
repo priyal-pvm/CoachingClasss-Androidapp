@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <LinearLayout
+            android:id="@+id/signin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginTop="75dp">
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/spzonelogo"
+                android:backgroundTint="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:textColorHint="@color/black"
+                            android:id="@+id/user_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/icon_user"
+                            android:drawableTint="@color/logoclr"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="2dp"
+                            android:hint="       Email-Id"
+                            android:textColor="@color/black"
+                            android:inputType="textEmailAddress"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout> <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:background="@color/white"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:orientation="vertical">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    app:cardElevation="3dp">
+
+                    <LinearLayout
+                        android:background="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="2dp"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/user_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/icon_padlock"
+                            android:drawableTint="@color/logoclr"
+                            android:textColorHint="@color/black"
+                            android:layout_marginTop="5dp"
+
+                            android:layout_marginBottom="2dp"
+                            android:hint="       Password"
+                            android:textColor="@color/black"
+                            android:inputType="textPassword"/>
+
+                            <TextView
+                                android:id="@+id/text_show"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="21dp"
+                                android:layout_marginBottom="15dp"
+                                android:background="@color/white"
+                                android:text="show"
+                                android:textColor="@color/black" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="LOGIN"
+            android:textColor="@color/black"
+            android:layout_below="@+id/signin_layout"
+            app:backgroundTint="@color/logoclr"/>
+<!--            android:backgroundTint="@color/design_default_color_secondary"-->
+
+<!--            />-->
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddStudent"
+
+    android:background="@drawable/blueback"
+    android:backgroundTintMode="screen"
+    android:backgroundTint="#74B2CAB6"
+    >
+<!--    tools:context=".Viewstudent">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            app:counterTextColor="@color/black"
+            android:background="#BC62B6AF"
+            app:hintTextColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/UpdateStudentName"
+                android:layout_width="match_parent"
+                android:background="#BC62B6AF"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterTextColor="@color/black"
+            android:background="#BC62B6AF"
+            app:hintTextColor="@color/black"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/UpdateStudentRollno"
+                android:background="#BC62B6AF"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Roll Number"
+                android:inputType="number"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            app:counterTextColor="@color/black"
+            android:background="#BC62B6AF"
+            app:hintTextColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:background="#BC62B6AF"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:id="@+id/UpdateStudentPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:counterTextColor="@color/black"
+            android:background="#BC62B6AF"
+            app:hintTextColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/UpdateStudentEmail"
+                android:background="#BC62B6AF"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            app:counterTextColor="@color/black"
+            android:background="#BC62B6AF"
+            app:hintTextColor="@color/black"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/UpdateStudentPhone"
+                android:layout_width="match_parent"
+                android:background="#BC62B6AF"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+                android:layout_height="wrap_content"
+                android:hint="Phone No."
+                android:maxLength="10"
+                android:inputType="phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/UpdateStudentClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown"
+            android:gravity="center"
+            android:layout_marginVertical="16dp"/>
+
+        <Spinner
+            android:id="@+id/UpdateStudentBatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown"
+            android:gravity="center"
+            android:layout_marginVertical="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/UpdateStudentBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/design_default_color_secondary"
+                android:textColor="@color/black"
+                android:text="Update Student"
+                app:backgroundTint="@color/logoclr"
+                android:layout_marginRight="5dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/DeleteStudentBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/design_default_color_secondary"
+                android:textColor="@color/black"
+                android:text="Delete Student"
+                app:backgroundTint="@color/logoclr"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

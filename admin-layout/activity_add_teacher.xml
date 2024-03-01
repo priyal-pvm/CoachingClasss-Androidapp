@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blueback"
+    android:backgroundTintMode="screen"
+    android:backgroundTint="#74B2CAB6"
+    tools:context=".AddTeacher">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp">
+        
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/teacherimage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/teacher_icon"
+            android:layout_gravity="center"
+            android:layout_marginTop="36dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:counterTextColor="@color/black"
+            android:background="#BC62B6AF"
+            app:hintTextColor="@color/black"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addTeacherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:background="#BC62B6AF"
+
+                app:hintTextColor="@color/black"
+                android:textColor="@color/white"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            app:counterTextColor="@color/black"
+            android:background="#BC62B6AF"
+            app:hintTextColor="@color/black"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addTeacherEmail"
+                android:background="#BC62B6AF"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:counterTextColor="@color/black"
+            android:background="#BC62B6AF"
+            app:hintTextColor="@color/black"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addTeacherPhone"
+                android:background="#BC62B6AF"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:maxLength="10"
+                android:textColorHint="@color/black"
+                android:hint="Phone no."
+                android:inputType="phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="16dp"
+            app:counterTextColor="@color/black"
+            android:background="#BC62B6AF"
+            app:hintTextColor="@color/black"
+
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/addTeacherPassword"
+                android:background="#BC62B6AF"
+                android:textColor="@color/white"
+                android:textColorHint="@color/black"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/AddTeacherSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown"
+            android:gravity="center"
+            android:layout_marginVertical="16dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addTeacherButton"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Add Teacher"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/design_default_color_secondary"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/logoclr" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewProfile"
+
+    android:background="@drawable/blueback"
+    android:backgroundTintMode="screen"
+    android:backgroundTint="#74B2CAB6"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/spwhite"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:text="Profile Info"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name_info"
+        android:layout_width="match_parent"
+
+        app:counterTextColor="@color/black"
+        android:background="#BC62B6AF"
+        app:hintTextColor="@color/black"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:background="#BC62B6AF"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_height="wrap_content"
+            android:hint="Name: Sagar Patel" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterTextColor="@color/black"
+        android:background="#BC62B6AF"
+        app:hintTextColor="@color/black"
+        android:layout_marginTop="5dp"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#BC62B6AF"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:hint="Phone no: 8000417451" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phone_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterTextColor="@color/black"
+        android:background="#BC62B6AF"
+        app:hintTextColor="@color/black"
+        android:layout_marginTop="10dp"
+        style="@style/ThemeOverlay.Material3.TextInputEditText.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:background="#BC62B6AF"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:layout_height="wrap_content"
+            android:hint="Email: spzone30@gmail.com" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="LOGOUT"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:textColor="@color/black"
+
+        android:layout_marginTop="10dp"/>
+</LinearLayout>
